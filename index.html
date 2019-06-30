@@ -1,149 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>CREATEACCOUNT</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+      position: relative;
+    }
+    h1, p {
+       font-family: 'Princess Sofia', cursive;
+    }
+
+
     
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <style type="text/css">
-      body {
-  background-position: center;
-  background-image: url(biola.jpg);
-  background-size: contain;
-  height: 100%;
+    .btn-primary {
+         text-align: center;
+    
+    }
+    .shopBtn {
+    min-height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #f89406;
+    display: inline-block;
+    padding: 0 12px;
+    border: 0;
 }
 
 
-h1 {
-  font-family: 'Quicksand', sans-serif;
-    font-size: 3em;
-  color: red;
-  text-shadow: 1px 1px 1px black;
-  background: linear-gradient(to bottom,
-    rgba(0,0,0,0.25), rgba(0,0,0,0.1));
-  padding: 3px;
+h1, p {
   text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5), inset
-  -2px -2px 5px rgba(255, 255, 255, 0.5)
-
+  font-size: 60px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey
 }
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: pink;
 
-.container {
-  border: 0px solid #fff; padding: 50px 60px; margin-top: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-box-shadow: -1px -2px 24px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px -2px 24px 3px rgba(0,0,0,0.75);
-     box-shadow: -1px -2px 24px 3px rgba(0,0,0,0.75);
-     
-}
-    </style>
-
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
 <body>
 
-	<div class="container">
-    <h1> REGISTRATION FORM</h1>
-    <div class="row">
-       <div class="col">
-      
-       </div>
-    <div class="col">
-     
-    </div>
-    </div>
-    <div class="row">
-    <div class="col">
-     
-    </div>
-    <div class="col">
-     
-    </div>
-    <form class="container">
-    	<form class="needs-validation" novalidate>
-
-  <div class="form-group">
-    <div class="form-group">
-      <label for="validationTooltip01">First name</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="validationTooltip02">Last name</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="validationTooltipUsername">Username</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-        </div>
-        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
-        <div class="invalid-tooltip">
-          Please choose a unique and valid username.
-        </div>
-      </div>
-    </div>
-  </div>
-  
-      <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <div class="form-group">
-      <label for="validationTooltip03">City</label>
-      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-      <div class="invalid-tooltip">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="validationTooltip04">State</label>
-      <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
-      <div class="invalid-tooltip">
-        Please provide a valid state.
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="validationTooltip05">Zip</label>
-      <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
-      <div class="invalid-tooltip">
-        Please provide a valid zip.
-      </div>
-
-    </div>
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-  
-
-
-</form>
-    </form>
-    <div class="col">
-   
-    </div>
+<div class="jumbotron" style="background-image: url(http://clipart-library.com/images/rcjGorMcR.jpg);">
+  <div class="container text-center">
+    <h1>Online Store</h1>      
+    <p>Mission, Vission & Values</p>
   </div>
 </div>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main style="background-image:url(https://clipground.com/images/shopping-bags-clipart-3.jpg); ">
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;" >BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://cdn.tzy.li/tzy/previews/images/001/166/313/579/original/in-my-head-im-a-surfing.jpg?1528442261" class="img-responsive" style="width:100%" alt="Image"></div>
+         <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="background-color: pink; text-align: center;">In my head Im a surfing - T-shirt 35.99 €</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://cdn.tzy.li/tzy/previews/images/001/313/166/228/original/namev1034.jpg?1535644650" class="img-responsive"style="width:100%" alt="Image" height="200" width="200" ></div>
+        <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="text-align: center; background-color: pink;">Premium Sweater Unisex 45.99 €</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://cdn.tzy.li/tzy/previews/images/001/313/799/289/original/namen166.jpg?1535671302" class="img-responsive" style="width:100%" alt="Image"></div>
+         <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="text-align: center; background-color: pink;">Premium Sweater Unisex 35.99 €</div>
+      </div>
+    </div>
+  </div>
+</div><br>
 
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://www.lonsdale.com/images/products/47239303_4pl.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+         <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="text-align: center; background-color: pink;">Lonsdale MTK Shorts Mens 30.99 €</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://cdn.shopify.com/s/files/1/0693/4225/products/Womens_Chicago_Comiskey_01_2048x.jpg?v=1553786595" class="img-responsive" style="width:100%" alt="Image"></div>
+         <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="text-align: center; background-color: pink;">Chicago White Sox Starter Jacket 30.99 €</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;">BLACK FRIDAY DEAL</div>
+        <div class="panel-body"><img src="https://cdn.shopify.com/s/files/1/0693/4225/products/AR2207-480-PHSFH001_2048x_560de166-5dcd-4bc9-a64a-cdbf77179b64_2048x.jpg?v=1555077800" style="width:100%" alt="Image"></div>
+         <a class="shopBtn" href="#">Add to cart</a>
+        <div class="panel-footer" style="text-align: center; background-color: pink;">Nike Sportswear Graphic Hoodie (Women's) 35.99 €</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+</main>
+
+
+<footer class="container-fluid text-center" style="background-color: pink">
+  <h6>Online Store Copyright</h6>  
+  <form class="form-inline">Get deals:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Sign Up</button>
+
+
+  </form>
+</footer>
 
 </body>
 </html>
